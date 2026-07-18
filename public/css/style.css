@@ -62,10 +62,9 @@ nav {
 .hero-logo { margin-bottom: 30px; }
 .hero-logo-img { height: 80px; opacity: 0.6; }
 .hero-title {
-  font-size: clamp(60px, 15vw, 160px); font-weight: 900;
-  letter-spacing: -4px; line-height: 1;
-  background: linear-gradient(135deg, #fff 0%, #666 100%);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  font-size: 4rem; /* пример, подстройте под ваш дизайн */
+  font-family: sans-serif;
+  text-transform: uppercase;
 }
 .hero-sub {
   font-size: 14px; letter-spacing: 6px; color: var(--gray);
@@ -214,5 +213,17 @@ footer {
 .product-scroll { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 8px 0; -ms-overflow-style: none; scrollbar-width: none; }
 .product-scroll::-webkit-scrollbar { display: none; }
 
-.v-box { display: inline-block; transform: scaleY(-1); font-family: inherit; overflow: visible; }
-.ows-box { display: inline-block; font-family: inherit; }
+.v-box {
+  display: inline-block;
+  transform: rotate(180deg);
+  /* Размер шрифта должен совпадать с .ows-box */
+  font-size: inherit;
+  line-height: inherit;
+  /* Можно добавить коррекцию вертикального выравнивания */
+  vertical-align: middle;
+}
+/* контейнер для "ows" */
+.ows-box {
+  display: inline-block;
+  vertical-align: middle;
+}
