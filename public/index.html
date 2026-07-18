@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>∧ows — streetwear</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="cursor-follower"></div>
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <img src="/img/logo.png" alt="∧ows" class="logo-img">
+    </a>
+    <div class="nav-links">
+      <a href="#drop">DROP 01</a>
+      <a href="#about">ABOUT</a>
+      <a href="#cart" class="cart-link">CART (<span id="cart-count">0</span>)</a>
+    </div>
+    <div class="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#drop" onclick="toggleMenu()">DROP 01</a>
+  <a href="#about" onclick="toggleMenu()">ABOUT</a>
+  <a href="#cart" onclick="toggleMenu()">CART</a>
+</div>
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-logo">
+      <img src="/img/logo-shape.png" alt="∧ows" class="hero-logo-img">
+    </div>
+    <h1 class="hero-title"><span class="v-box">V</span><span class="ows-box">ows</span></h1>
+    <p class="hero-sub">DROP 01 / SS26</p>
+    <a href="#drop" class="btn-primary">VIEW DROP</a>
+  </div>
+</section>
+<section class="drop" id="drop">
+  <div class="section-header">
+    <h2>DROP 01</h2>
+    <p class="section-sub">LONG SLEEVE · WAFFLE · CROP</p>
+  </div>
+  <div class="product-grid">
+    <div class="product-card" data-id="1">
+              <div class="product-scroll">
+          <img src="/img/photo_2026-07-18_19-37-48.jpg" alt="lows waffle long sleeve">
+          <img src="/img/photo_2026-07-18_19-37-50.jpg" alt="lows waffle long sleeve">
+          <img src="/img/photo_2026-07-18_19-37-52.jpg" alt="lows waffle long sleeve">
+          <img src="/img/photo_2026-07-18_19-37-55.jpg" alt="lows waffle long sleeve">
+        </div>
+        <div class="product-badge">DROP 01</div>
+      </div>
+      <div class="product-info">
+        <h3>WAFFLE LONG SLEEVE</h3>
+        <p class="product-desc">вафельный материал · свободный кроп крой</p>
+        <div class="size-selector">
+          <span class="onesize">ONE SIZE</span>
+        </div>
+        <div class="product-price">
+          <span class="price">4 990 ₽</span>
+          <button class="btn-add" onclick="addToCart(1)">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="about-inner">
+    <h2><span class="v-box">V</span><span class="ows-box">ows</span></h2>
+    <p class="about-text">
+      ∧ows — это стритвир бренд, рождённый из культуры, музыки и улиц. 
+      Каждая вещь — это не просто одежда, а высказывание. 
+      DROP 01: вафельный лонгслив свободного кроп кроя — минимализм, 
+      в котором хочется жить.
+    </p>
+    <div class="about-shape">
+      <img src="/img/logo-shape.png" alt="∧ows symbol">
+    </div>
+  </div>
+</section>
+<section class="cart-section" id="cart">
+  <h2>CART</h2>
+  <div class="cart-empty" id="cartEmpty">
+    <p>YOUR CART IS EMPTY</p>
+    <a href="#drop" class="btn-primary">SHOP NOW</a>
+  </div>
+  <div class="cart-content hidden" id="cartContent">
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total">
+      <span>TOTAL:</span>
+      <span id="cartTotal">0 ₽</span>
+    </div>
+    <button class="btn-primary btn-checkout" onclick="checkout()">CHECKOUT — MOCK</button>
+    <p class="checkout-note">* оплата недоступна · тестовый режим</p>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="/img/logo.png" alt="∧ows">
+    </div>
+    <p class="footer-copy">© 2026 <span class="v-box">V</span><span class="ows-box">ows</span>. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>
