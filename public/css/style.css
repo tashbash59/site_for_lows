@@ -99,7 +99,7 @@ nav {
   background: var(--text); color: var(--bg); font-size: 10px;
   font-weight: 700; padding: 4px 10px; letter-spacing: 1px;
 }
-.product-info { padding: 24px; }
+.product-info { padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
 .product-info h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
 .product-desc { font-size: 12px; color: var(--gray); letter-spacing: 1px; margin-bottom: 20px; }
 .size-selector { display: flex; gap: 8px; margin-bottom: 20px; justify-content: center; }
@@ -111,7 +111,7 @@ nav {
 }
 .size-btn.active { border-color: var(--text); background: var(--text); color: var(--bg); }
 .size-btn:hover { border-color: var(--text); }
-.product-price { display: flex; justify-content: space-between; align-items: center; }
+.product-price { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
 .price { font-size: 22px; font-weight: 700; }
 .btn-add {
   padding: 12px 24px; background: transparent; border: 1px solid var(--text);
@@ -226,4 +226,4 @@ footer {
 .ows-box {
   display: inline-block;
   vertical-align: middle;
-}
+}.hero-logo-text { max-width: 220px; height: auto; }

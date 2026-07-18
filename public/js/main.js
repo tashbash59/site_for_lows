@@ -1,5 +1,5 @@
 var cart = [];
-var product = { id: 1, name: 'WAFFLE LONG SLEEVE', price: 4990 };
+var product = { id: 1, name: 'WAFFLE LONG SLEEVE', price: 4399 };
 function toggleMenu() {
   var m = document.getElementById('mobileMenu');
   if (m) m.classList.toggle('open');
